@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.card{
+  @apply bg-white rounded-2xl shadow-sm p-4;
+}
+
+/* Mobile sticky CTA */
+.mobile-cta{
+  @apply fixed inset-x-0 bottom-4 flex justify-center z-50 px-4;
+}

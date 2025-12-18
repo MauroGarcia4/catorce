@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#ffffff" />
+  <rect x="60" y="60" width="680" height="480" rx="20" fill="#fbf7f5" stroke="#ece7e3" />
+  <text x="80" y="140" fill="#6B4F3A" font-family="Inter, Arial" font-size="40">Café &amp; Pastelería</text>
+</svg>
