@@ -8,9 +8,15 @@ module.exports = {
     extend: {
       colors: {
         brand: {
+          50: '#fbf7f4',
+          100: '#f6efe9',
+          200: '#efdfd2',
+          300: '#e6cdb8',
+          400: '#bfa28a',
           DEFAULT: '#6B4F3A',
           600: '#523b2d',
-          400: '#8b6f5e'
+          700: '#3f2d24',
+          800: '#2b2018'
         },
         coffee: '#6B4F3A',
         cream: '#FAF7F2',

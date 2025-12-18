@@ -17,8 +17,8 @@ export default function Footer(){
           <div>
             <h4 className="font-semibold text-gray-900 mb-3">Síguenos</h4>
             <div className="flex gap-4">
-              <a href={site.instagram} target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">Instagram</a>
-              <a href={site.pedidosya} target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-700 hover:text-black transition-colors">PedidosYa</a>
+              <a href={site.instagram} target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-700 hover:text-brand transition-colors">Instagram</a>
+              <a href={site.pedidosya} target="_blank" rel="noreferrer" className="text-sm font-medium text-gray-700 hover:text-brand transition-colors">PedidosYa</a>
             </div>
           </div>
         </div>
