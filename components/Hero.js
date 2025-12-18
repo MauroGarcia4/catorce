@@ -3,26 +3,43 @@ import Image from 'next/image';
 
 export default function Hero(){
   return (
-    <section className="bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-5xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center gap-8">
+    <section className="bg-gradient-to-br from-white via-gray-50 to-cream pt-16 pb-12 md:pt-24 md:pb-20">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
         <div className="flex-1">
-          <h1 className="text-3xl md:text-4xl font-bold">Catorce Takeaway</h1>
-          <p className="mt-3 text-gray-600">{site.slogan} — Café, pastelería y pedidos para llevar en San Nicolás.</p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-black mb-3">
+            Catorce Takeaway
+          </h1>
+          <p className="text-lg md:text-xl text-gray-600 mb-2 font-medium">{site.slogan}</p>
+          <p className="text-base text-gray-600 leading-relaxed mb-8">
+            Café de especialidad, pastelería fresca y pedidos para llevar en San Nicolás. 
+            Hecho con cuidado, listo en minutos.
+          </p>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-3">
-            <a aria-label="Pedir por PedidosYa" href={site.pedidosya} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-5 py-3 bg-black text-white rounded-xl shadow hover:opacity-95">Pedir por PedidosYa</a>
-            <a aria-label="Ver Instagram" href={site.instagram} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center px-5 py-3 border rounded-xl text-gray-700">Ver Instagram</a>
+          <div className="flex flex-col sm:flex-row gap-4 mb-8">
+            <a aria-label="Pedir por PedidosYa ahora" href={site.pedidosya} target="_blank" rel="noreferrer" className="btn-primary shadow-lg hover:shadow-xl">
+              Pedir por PedidosYa
+            </a>
+            <a aria-label="Ver Instagram" href={site.instagram} target="_blank" rel="noreferrer" className="btn-secondary">
+              Ver en Instagram
+            </a>
           </div>
 
-          <div className="mt-4 flex gap-2 text-xs text-gray-600">
-            <span className="px-2 py-1 bg-gray-100 rounded-full">Takeaway</span>
-            <span className="px-2 py-1 bg-gray-100 rounded-full">Café</span>
-            <span className="px-2 py-1 bg-gray-100 rounded-full">San Nicolás</span>
+          <div className="flex flex-wrap gap-2">
+            <span className="px-3 py-1 bg-cream text-coffee text-xs font-semibold rounded-full border border-gray-200">☕ Café Especialidad</span>
+            <span className="px-3 py-1 bg-cream text-coffee text-xs font-semibold rounded-full border border-gray-200">🥐 Pastelería</span>
+            <span className="px-3 py-1 bg-cream text-coffee text-xs font-semibold rounded-full border border-gray-200">📍 San Nicolás</span>
           </div>
         </div>
 
-        <div className="w-full md:w-80 relative">
-          <Image src="/gallery/1.svg" alt="Imagen hero" width={420} height={360} className="rounded-2xl" />
+        <div className="w-full md:w-96 relative">
+          <Image 
+            src="/gallery/1.svg" 
+            alt="Catorce Takeaway - Café y pastelería" 
+            width={500} 
+            height={420} 
+            className="rounded-3xl shadow-lg w-full h-auto" 
+            priority
+          />
         </div>
       </div>
     </section>

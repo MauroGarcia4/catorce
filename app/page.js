@@ -46,15 +46,20 @@ const jsonLd = {
 
 export default function Page(){
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <Header />
       <Hero />
-      <div className="max-w-5xl mx-auto px-6 py-10">
+      <div className="max-w-6xl mx-auto px-6">
         <Highlights />
+        <div className="py-2"></div>
         <MenuPreview />
+        <div className="py-2"></div>
         <HowToOrder />
+        <div className="py-2"></div>
         <Gallery />
+        <div className="py-2"></div>
         <Location />
+        <div className="py-2"></div>
         <Hours />
       </div>
       <Footer />
