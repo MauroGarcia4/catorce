@@ -25,9 +25,9 @@ export default function Hero(){
           </div>
 
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1 bg-cream text-coffee text-xs font-semibold rounded-full border border-gray-200">☕ Café Especialidad</span>
-            <span className="px-3 py-1 bg-cream text-coffee text-xs font-semibold rounded-full border border-gray-200">🥐 Pastelería</span>
-            <span className="px-3 py-1 bg-cream text-coffee text-xs font-semibold rounded-full border border-gray-200">📍 San Nicolás</span>
+            <span className="px-3 py-1 bg-cream text-brand text-xs font-semibold rounded-full border border-gray-200">☕ Café Especialidad</span>
+            <span className="px-3 py-1 bg-cream text-brand text-xs font-semibold rounded-full border border-gray-200">🥐 Pastelería</span>
+            <span className="px-3 py-1 bg-cream text-brand text-xs font-semibold rounded-full border border-gray-200">📍 San Nicolás</span>
           </div>
         </div>
 

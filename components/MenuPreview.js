@@ -20,7 +20,7 @@ export default function MenuPreview(){
             <div className="text-2xl mb-2">{it.icon}</div>
             <h4 className="font-semibold text-sm">{it.name}</h4>
             <p className="text-xs text-gray-600 mt-1">{it.desc}</p>
-            <p className="text-coffee font-bold text-base mt-3">{it.price}</p>
+            <p className="text-brand font-bold text-base mt-3">{it.price}</p>
           </div>
         ))}
       </div>

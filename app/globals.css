@@ -8,9 +8,19 @@ html {
   scroll-behavior: smooth;
 }
 
+:root{
+  --brand: #6B4F3A;
+  --brand-600: #523b2d;
+  --cream: #FAF7F2;
+  --beige: #F5F1ED;
+  --muted: #6B7280;
+  --bg: #ffffff;
+  --surface: #fffaf8;
+}
+
 body{
   font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  background: #ffffff;
+  background: var(--bg);
   color: #1a202c;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -36,11 +46,18 @@ a {
 
 /* CTA Button base */
 .btn-primary {
-  @apply inline-flex items-center justify-center px-6 py-3 bg-black text-white rounded-xl font-medium shadow-md hover:opacity-90 transition-opacity duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800;
+  @apply inline-flex items-center justify-center px-6 py-3 rounded-xl font-medium shadow-md hover:opacity-90 transition-opacity duration-200 focus:outline-none;
+  background-color: var(--brand);
+  color: #ffffff;
+  box-shadow: 0 10px 24px rgba(16,24,40,0.08);
+}
+.btn-primary:focus{
+  box-shadow: 0 0 0 6px rgba(82,59,45,0.10);
 }
 
 .btn-secondary {
-  @apply inline-flex items-center justify-center px-6 py-3 border border-gray-300 rounded-xl font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200;
+  @apply inline-flex items-center justify-center px-6 py-3 border rounded-xl font-medium text-gray-700 hover:bg-gray-50 transition-colors duration-200;
+  border-color: var(--muted);
 }
 
 /* Mobile sticky CTA */

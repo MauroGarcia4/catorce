@@ -7,9 +7,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          DEFAULT: '#6B4F3A',
+          600: '#523b2d',
+          400: '#8b6f5e'
+        },
         coffee: '#6B4F3A',
-        'cream': '#FAF7F2',
-        'beige': '#F5F1ED'
+        cream: '#FAF7F2',
+        beige: '#F5F1ED',
+        muted: '#6B7280'
       },
       boxShadow: {
         'soft': '0 2px 8px rgba(0, 0, 0, 0.05)',
